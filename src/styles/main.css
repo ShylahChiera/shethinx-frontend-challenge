@@ -1,20 +1,21 @@
 @font-face {
 font-family: "Graphik";
-src: url("/src/assets/fonts/Graphik-Medium.woff") format("woff"),
-url("/src/assets/fonts/Graphik-Medium.otf") format("opentype"),
-url("/src/assets/fonts/Graphik-Medium.ttf") format('truetype')
+src: url("../assets/fonts/Graphik-Medium.woff") format("woff"),
+url("../assets/fonts/Graphik-Medium.otf") format("opentype"),
+url("../assets/fonts/Graphik-Medium.ttf") format('truetype')
 }
 
 
-body{
+body {
   font-family: Graphik;
-  font-size: 17px;
+  font-size: 14px;
   margin: 0;
 }
 
 .product {
   height: 100vh;
   background-color: #F8F8F9;
+  overflow: scroll;
 }
 
 * {
@@ -37,7 +38,8 @@ body{
   height: 30vh;
   width: 25%;
   position: absolute;
-  margin-top: 15%;
+  margin-top: 230px;
+
 }
 
 .right {
@@ -47,8 +49,10 @@ body{
 .info-col {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 10px;
   height: 32px;
+  font-size: 14px;
+
 }
 
 .info-row {
@@ -74,10 +78,47 @@ body{
 }
 h6{
   margin: 0;
+  font-weight: normal;
 }
-
+.option-button {
+  font-size: 10px;
+  text-decoration: underline;
+  background-color: transparent;
+  border: 0;
+  margin-top: 10px;
+  padding:0;
+}
 .info-button {
   width: 32px;
+  background-color: transparent;
+  border: 0;
+}
+.button-container {
+  margin-top: 40px;
+}
+.add-button {
+  background-color: black;
+  width: 100%;
+  border: 0;
+  color: white;
+  height: 36px;
+}
+
+.set {
+  font-size: 16px;
+}
+
+.product-imgs {
+  position: relative;
+  width: 35%;
+  margin-left: 32%;
+  margin-right: 32%;
+  margin-top: 100px;
+}
+
+.img {
+    width:100%;
+
 }
 
 .more-products {

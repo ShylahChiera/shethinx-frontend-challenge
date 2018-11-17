@@ -5,26 +5,26 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./src/styles/main.css">
 <script type="text/javascript" src="./src/scripts/productinfo.js"></script>
+<script type="text/javascript" src="./src/scripts/loadproductimgs.js"></script>
+
+<script type="text/javascript" src="./src/scripts/loadproductinfo.js"></script>
+
 <script>
-    console.log(products[0].type)
 </script>
 </head>
 
 <body>
   <section class="product">
       <div class="row">
-        <div class="col">
-            <h5>hi-waist</h5>
-            <p>Heavy days. Holds up to 2 tampons worth.</p>
-            <p>The phrase "treat yo'self" reaches new belly-button brushing heights
-                with the Hi-Waist, and it's here just in time for cuffing season.</p>
+        <div id="info-left" class="col">
         </div>
-        <div class="col right">
-            <h5>$35.00</h5>
+
+        <div id="info-right" class="col right">
+            <h5 id="price">$35.00</h5>
             <div class="info-row">
               <div class="info-col">color</div>
-              <div class="info-col black">black</div>
-              <div class="info-col beige">beige</div>
+              <div id="color-one" class="info-col black"></div>
+              <div id="color-two" class="info-col beige"></div>
             </div>
             <div class="info-row">
               <button class="info-col info-button">+</button>
@@ -33,10 +33,18 @@
             </div>
             <div class="info-row">
               <h6 class="info-col">size</h6>
-              <button class="info-button right">></button>
+              <button class=" info-col info-button right">></button>
             </div>
+            <button class="option-button">what's my size?</button>
+            <div class="info-row button-container">
+              <button class="info-col add-button">add to cart</button>
+            </div>
+            <button class="option-button set">build a cycle set and save up to 20%</button>
 
         </div>
+
+     </div>
+     <div id="imgs" class="product-imgs">
      </div>
   </section>
   <section class="more-products">
