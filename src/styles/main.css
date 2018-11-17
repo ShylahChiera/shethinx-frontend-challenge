@@ -1,0 +1,92 @@
+@font-face {
+font-family: "Graphik";
+src: url("/src/assets/fonts/Graphik-Medium.woff") format("woff"),
+url("/src/assets/fonts/Graphik-Medium.otf") format("opentype"),
+url("/src/assets/fonts/Graphik-Medium.ttf") format('truetype')
+}
+
+
+body{
+  font-family: Graphik;
+  font-size: 17px;
+  margin: 0;
+}
+
+.product {
+  height: 100vh;
+  background-color: #F8F8F9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+  float: left;
+  height: 30vh;
+  width: 25%;
+  position: absolute;
+  margin-top: 15%;
+}
+
+.right {
+  right: 5%;
+}
+
+.info-col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: 32px;
+}
+
+.info-row {
+  content:"";
+  display: table;
+  clear:both;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 20px;
+
+}
+
+.beige {
+  background-color: #FDDAB7;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+.right {
+  float: right;
+}
+h6{
+  margin: 0;
+}
+
+.info-button {
+  width: 32px;
+}
+
+.more-products {
+  height: 100vh;
+}
+
+/* responsive columns for mobile */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
