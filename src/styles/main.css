@@ -152,7 +152,7 @@ h6{
 }
 
 .product-imgs {
-  position: auto;
+  position: absolute;
   width: 35%;
   margin-left: 32%;
   margin-right: 32%;
