@@ -2,7 +2,7 @@
 window.onload = function loadproductinfo(){
   //import product from javascript object
   var product = products[0]
-
+  var checkMark = true;
   //dynamically create elements for left hand column
   var type = document.createElement("h5");
   var typeNode = document.createTextNode(product.type);
@@ -23,8 +23,9 @@ window.onload = function loadproductinfo(){
   //load price
   document.getElementById("price").innerHTML = "$" + product.price + ".00";
   //load colors
-  document.getElementById("color-one").innerHTML = product.colors[0];
-  document.getElementById("color-two").innerHTML = product.colors[1];
+    document.getElementById("color-one").innerHTML = product.colors[0] + "&#10003;";
+    document.getElementById("color-two").innerHTML = product.colors[1];
+
   loadproductimgs();
 
 };
