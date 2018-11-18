@@ -3,7 +3,7 @@
 var products = [
     {
       type: "high-waist",
-      price: 35.00,
+      price: 35,
       colors: ['black', 'beige'],
       sizes: ['xs', 's', 'm', 'l', 'xl'],
       subtitle: "Heavy days. Holds up to 2 tampons worth.",

@@ -21,10 +21,7 @@ window.onload = function loadproductinfo(){
   leftCol.appendChild(desc);
 
   //load price
-  document.getElementById("price").innerHTML = "$" + product.price + ".00";
-  //load colors
-    // document.getElementById("color-one").innerHTML = product.colors[0];
-    // document.getElementById("color-two").innerHTML = product.colors[1];
+  document.getElementById("price").innerHTML = "$" + product.price + ".00";    
 
   loadproductimgs();
 

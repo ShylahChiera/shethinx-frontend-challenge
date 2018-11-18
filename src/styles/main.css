@@ -67,8 +67,32 @@ p {
   height: 32px;
   font-size: 14px;
   background-color: transparent;
+  display: inline-block;
 }
 
+.info-col input {
+  font-family: Graphik;
+  position: absolute;
+  background-color: transparent;
+  border: 0px;
+  content:"1";
+  outline: 0;
+  font-size: 14px;
+  width: 24px;
+  padding:0;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: none;
+}
 .info-row {
   content:"";
   display: table;
@@ -146,7 +170,7 @@ h6{
     display: inline-block;
 }
 
-.container {
+.size-container {
   position: absolute;
   display: none;
   margin-top: 30px;

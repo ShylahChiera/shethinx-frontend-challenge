@@ -5,11 +5,12 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./src/styles/main.css">
 <link rel="stylesheet" type="text/css" href="./src/styles/colorbox.css">
+
 <script type="text/javascript" src="./src/scripts/productinfo.js"></script>
 <script type="text/javascript" src="./src/scripts/loadproductimgs.js"></script>
-
 <script type="text/javascript" src="./src/scripts/loadproductinfo.js"></script>
 <script type="text/javascript" src="./src/scripts/sizedropdown.js"></script>
+<script type="text/javascript" src="./src/scripts/quantity.js"></script>
 
 <script>
 </script>
@@ -34,7 +35,7 @@
 
               </div>
 
-              <div id="color-two" class="info-col beige">
+              <div class="info-col beige">
                 <label class="color-container">beige
                   <input type="radio"  name="radio">
                   <span class="checkmark"></span>
@@ -42,15 +43,15 @@
               </div>
             </div>
             <div class="info-row">
-              <button class="info-col info-button">+</button>
-              <h6 class="info-col quant">quantity</h6>
-              <button class="info-col info-button right">-</button>
+              <button class="info-col info-button" onclick="subtractQuantity()">-</button>
+              <label class="info-col">quantity &nbsp<input data-min="1" type="number" id="quantity" class="quantity" value="1"></input></label>
+              <button class="info-col info-button right" onclick="addQuantity()">+</button>
             </div>
 
             <div id="dropdown" class="info-row" onclick="sizeDropDown()">
               <h6 class="info-col">size</h6>
               <div id="size" class=" info-col info-button right" ></div>
-              <div id="container" class="container">
+              <div id="size-container" class="size-container">
                 <a class="size-item">xs</a></br>
                 <a class="size-item">s</a></br>
                 <a class="size-item">m</a></br>
