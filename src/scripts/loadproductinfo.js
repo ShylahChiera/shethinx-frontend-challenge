@@ -23,8 +23,8 @@ window.onload = function loadproductinfo(){
   //load price
   document.getElementById("price").innerHTML = "$" + product.price + ".00";
   //load colors
-    document.getElementById("color-one").innerHTML = product.colors[0] + "&#10003;";
-    document.getElementById("color-two").innerHTML = product.colors[1];
+    // document.getElementById("color-one").innerHTML = product.colors[0];
+    // document.getElementById("color-two").innerHTML = product.colors[1];
 
   loadproductimgs();
 

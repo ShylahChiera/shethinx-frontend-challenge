@@ -1,0 +1,56 @@
+/* container for checkmark */
+.color-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* hide default radio */
+.color-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin:0;
+}
+
+/* position checkmark */
+.checkmark {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding-right: 15px;
+    background-color: transparent;
+}
+
+/* hide checkmark when not checked */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* display checkmark when checked */
+.color-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* create checkmark */
+.color-container .checkmark:after {
+ 	font-size: 14px;
+  content: "\2713";
+	background: transparent;
+}
+/* color === black */
+.black {
+  color: white;
+  background-color: black;
+}
+/* color === beige */
+.beige {
+  background-color: #F8DFCF;
+}

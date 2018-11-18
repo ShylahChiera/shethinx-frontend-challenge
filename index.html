@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./src/styles/main.css">
+<link rel="stylesheet" type="text/css" href="./src/styles/colorbox.css">
 <script type="text/javascript" src="./src/scripts/productinfo.js"></script>
 <script type="text/javascript" src="./src/scripts/loadproductimgs.js"></script>
 
@@ -24,8 +25,21 @@
             <h5 id="price">$35.00</h5>
             <div class="info-row">
               <div class="info-col">color</div>
-              <div id="color-one" class="info-col black"></div>
-              <div id="color-two" class="info-col beige"></div>
+
+              <div  class="info-col black">
+                <label class="color-container ">black
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+
+              <div id="color-two" class="info-col beige">
+                <label class="color-container">beige
+                  <input type="radio"  name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
             </div>
             <div class="info-row">
               <button class="info-col info-button">+</button>
@@ -52,11 +66,8 @@
             <button class="option-button set">build a cycle set and save up to 20%</button>
 
         </div>
-
      </div>
      <div id="imgs" class="product-imgs">
-
-
      </div>
   </section>
   <section id="products" class="more-products">
