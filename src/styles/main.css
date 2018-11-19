@@ -6,19 +6,31 @@ url("../assets/fonts/Graphik-Medium.ttf") format('truetype')
 }
 
 
-body {
+html, body {
   font-family: Graphik;
   font-size: 14px;
   margin: 0;
+  display: inline-block;
 }
 p {
   line-height: 22px;
   margin-top: 20px;
 }
-.product {
-  height: 100vh;
+/* .product {
   background-color: #F8F8F9;
   overflow: scroll;
+  height: 100vh;
+  display: inline-block;
+
+} */
+
+.product{
+  width: 100%;
+  height: 100vh;
+  background-color:#F8F8F9;
+  overflow: scroll;
+  display: inline-block;
+  padding-bottom: 50px;
 }
 
 * {
@@ -45,9 +57,11 @@ p {
     clear: both;
 }
 
-.col {
+/* .product-carousel {
+  display:none;
+} */
+.column {
   float: left;
-  height: 30vh;
   width: 25%;
   position: absolute;
   margin-top: 260px;
@@ -57,8 +71,6 @@ p {
 .right {
   right: 5%;
 }
-
-
 
 .info-col {
   float: left;
@@ -103,7 +115,7 @@ input[type=number]
 
 }
 
-.right {
+.right-button{
   float: right;
 }
 h6{
@@ -152,7 +164,7 @@ h6{
 }
 
 .product-imgs {
-  position: absolute;
+  position: auto;
   width: 35%;
   margin-left: 32%;
   margin-right: 32%;
@@ -222,11 +234,15 @@ h6{
   width: 100%
 }
 
-/* responsive columns for mobile */
-@media screen and (max-width: 600px) {
-    .col {
-        width: 100%;
-
+/* responsive for tablets and mobile */
+@media only screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+      position: relative;
+      margin: auto;
+    }
+    .right {
+      right: 0;
     }
     .product-col {
       width: 100%;
@@ -234,4 +250,9 @@ h6{
     .product-imgs {
       display: none;
     }
+    .product {
+      overflow:hidden;
+      height: auto;
+    }
+
 }

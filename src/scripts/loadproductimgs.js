@@ -23,7 +23,7 @@ function toggleImages() {
 
   var imgContainer = document.getElementById("imgs");
   if(notOpen) {
-    imgContainer.setAttribute("style", "width: 100%; margin:0; background-color: #F8F8F9; cursor: zoom-out;");
+    imgContainer.setAttribute("style", "width: 100%; margin:0; background-color: #F8F8F9; cursor: zoom-out; ");
     notOpen = !notOpen;
   } else if (!notOpen) {
     imgContainer.setAttribute("style", "width: 35%; margin-left: 32%; margin-right: 32%; background-color: transparent; cursor: zoom-in;");

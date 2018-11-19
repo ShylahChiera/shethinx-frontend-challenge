@@ -3,8 +3,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" type="text/css" href="./src/styles/main.css">
 <link rel="stylesheet" type="text/css" href="./src/styles/colorbox.css">
+<link rel="stylesheet" type="text/css" href="./src/styles/carousel.css">
 
 <script type="text/javascript" src="./src/scripts/productinfo.js"></script>
 <script type="text/javascript" src="./src/scripts/loadproductimgs.js"></script>
@@ -13,16 +16,51 @@
 <script type="text/javascript" src="./src/scripts/quantity.js"></script>
 
 <script>
+
 </script>
 </head>
 
 <body>
-  <section class="product">
+  <section >
+    <div class="product">
+      <div class="carousel">
+          <div class="slideshow-container">
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_2_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_3_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_4_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_side_1024x1024.jpg" style="width:100%">
+                </div>
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_back_1024x1024.jpg" style="width:100%">
+                </div>
+
+          </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+     </div>
       <div class="row">
-        <div id="info-left" class="col">
+        <div id="info-left" class="column">
         </div>
 
-        <div id="info-right" class="col right">
+        <div id="info-right" class="column right">
             <h5 id="price">$35.00</h5>
             <div class="info-row">
               <div class="info-col">color</div>
@@ -45,12 +83,12 @@
             <div class="info-row">
               <button class="info-col info-button" onclick="subtractQuantity()">-</button>
               <label class="info-col">quantity &nbsp<input data-min="1" type="number" id="quantity" class="quantity" value="1"></input></label>
-              <button class="info-col info-button right" onclick="addQuantity()">+</button>
+              <button class="info-col info-button right-button" onclick="addQuantity()">+</button>
             </div>
 
             <div id="dropdown" class="info-row" onclick="sizeDropDown()">
               <h6 class="info-col">size</h6>
-              <div id="size" class=" info-col info-button right" ></div>
+              <div id="size" class=" info-col info-button right-button" ></div>
               <div id="size-container" class="size-container">
                 <a class="size-item">xs</a></br>
                 <a class="size-item">s</a></br>
@@ -70,6 +108,7 @@
      </div>
      <div id="imgs" class="product-imgs">
      </div>
+   </div>
   </section>
   <section id="products" class="more-products">
     <div class="product-row">
@@ -131,5 +170,6 @@
   </section>
 
 </body>
+<script type="text/javascript" src="./src/scripts/carousel.js"></script>
 
 </html>
