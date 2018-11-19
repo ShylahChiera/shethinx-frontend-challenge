@@ -1,0 +1,187 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="./src/styles/main.css">
+<link rel="stylesheet" type="text/css" href="./src/styles/colorbox.css">
+<link rel="stylesheet" type="text/css" href="./src/styles/carousel.css">
+
+<script type="text/javascript" src="./src/scripts/productinfo.js"></script>
+<script type="text/javascript" src="./src/scripts/loadproductimgs.js"></script>
+<script type="text/javascript" src="./src/scripts/loadproductinfo.js"></script>
+<script type="text/javascript" src="./src/scripts/sizedropdown.js"></script>
+<script type="text/javascript" src="./src/scripts/quantity.js"></script>
+
+<script>
+
+</script>
+</head>
+
+<body>
+  <!-- product section -->
+  <section>
+    <!-- product container top -->
+    <div class="product">
+      <!-- mobile carousel -->
+      <!-- TODO: dynamically add images to carousel -->
+      <div class="carousel">
+          <div class="carousel-container">
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_2_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_3_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_front_4_1024x1024.jpg" style="width:100%">
+                </div>
+
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_side_1024x1024.jpg" style="width:100%">
+                </div>
+                <div class="carousel-slides">
+                  <img src="src/assets/top/highwaist_black_back_1024x1024.jpg" style="width:100%">
+                </div>
+
+          </div>
+            <br>
+            <!-- carousel indicators -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+     </div>
+     <!-- row/column for responsiveness -->
+      <div class="row">
+        <!-- column for dynamically added content -->
+        <div id="info-left" class="column">
+        </div>
+        <!-- column for product details -->
+        <div id="info-right" class="column right">
+            <h5 id="price">$35.00</h5>
+            <!-- color details row -->
+            <div class="info-row">
+              <div class="info-col">color</div>
+              <!-- color choice radio button user input -->
+              <!-- TODO: dynamically add color choices -->
+              <div  class="info-col black">
+                <label class="color-container ">black
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+
+              <div class="info-col beige">
+                <label class="color-container">beige
+                  <input type="radio"  name="radio">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <!-- quantity details row -->
+            <div class="info-row">
+              <button class="info-col info-button" onclick="subtractQuantity()">-</button>
+              <label class="info-col">quantity &nbsp<input data-min="1" type="number" id="quantity" class="quantity" value="1"></input></label>
+              <button class="info-col info-button right-button" onclick="addQuantity()">+</button>
+            </div>
+            <!-- size details row -->
+            <div id="dropdown" class="info-row" onclick="sizeDropDown()">
+              <h6 class="info-col">size</h6>
+              <div id="size" class=" info-col info-button right-button" ></div>
+              <!-- TODO: dynamically add sizes to list -->
+              <div id="size-container" class="size-container">
+                <a class="size-item">xs</a></br>
+                <a class="size-item">s</a></br>
+                <a class="size-item">m</a></br>
+                <a class="size-item">l</a></br>
+                <a class="size-item">xl</a></br>
+              </div>
+            </div>
+
+            <button class="option-button">what's my size?</button>
+            <button class="info-col add-button">add to cart</button>
+            <button class="option-button set">build a cycle set and save up to 20%</button>
+
+        </div>
+     </div>
+     <!-- image container for dynamically added images -->
+     <div id="imgs" class="product-imgs">
+     </div>
+   </div>
+  </section>
+  <!-- "more products" section -->
+  <!-- TODO:  dynamically add more products from javascript object-->
+  <section id="products" class="more-products">
+    <!-- row/column for responsiveness -->
+    <div class="product-row">
+        <div class=product-col>
+          <div class="product-container">
+
+          <img src="src/assets/bottom/thinx_productpage_-04.jpg" style="width: 450px; height: auto;"></img>
+          <div class="link-container">
+          <a>Shop Hiphugger</a>
+          <p>heavy days</p>
+        </div>
+      </div>
+        </div>
+        <div class="product-col">
+          <div class="product-container">
+
+          <img src="src/assets/bottom/thinx_productpage_-03.jpg" style="height: 450px; width: auto;"></img>
+          <div class="link-container">
+          <a>Shop Cheeky</a>
+          <p>light days</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="product-row">
+      <div class="product-col middle">
+        <div class="product-container">
+          <img src="src/assets/bottom/thinx_productpage_-05.jpg" style="width: 450px; height: auto;"></img>
+          <div class="link-container">
+            <a>Shop Thong</a>
+            <p>lightest days</p>
+          </div>
+      </div>
+
+      </div>
+    </div>
+    <div class="product-row">
+        <div class="product-col">
+          <div class="product-container">
+
+          <img src="src/assets/bottom/thinx_productpage_-07.jpg" style="width: 450px; height: auto;"></img>
+          <div class="link-container">
+          <a>Shop Sport</a>
+          <p>medium days</p>
+        </div>
+      </div>
+        </div>
+          <div class="product-col">
+        <div class="product-container">
+
+        <img src="src/assets/bottom/thinx_productpage_-08.jpg" style="height: 450px; width: auto;" ></img>
+        <div class="link-container">
+        <a>Shop Boyshort</a>
+        <p>light days</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script type="text/javascript" src="./src/scripts/carousel.js"></script>
+
+</html>
