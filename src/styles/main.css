@@ -164,17 +164,17 @@ h6{
 }
 
 .product-imgs {
-  position: auto;
   width: 35%;
   margin-left: 32%;
   margin-right: 32%;
   margin-top: 100px;
   cursor: zoom-in;
+  position:relative;
 }
 
 .img {
     width:100%;
-
+    position: relative;
 }
 
 .dropdown {
