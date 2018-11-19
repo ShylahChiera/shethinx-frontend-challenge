@@ -2,7 +2,7 @@
 .carousel {display: none;}
 
 /* carousel container */
-.slideshow-container {
+.carousel-container {
   width: 100%;
   position: relative;
   margin: auto;
