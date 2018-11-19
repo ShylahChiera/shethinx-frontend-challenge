@@ -21,8 +21,12 @@
 </head>
 
 <body>
+  <!-- product section -->
   <section>
+    <!-- product container top -->
     <div class="product">
+      <!-- mobile carousel -->
+      <!-- TODO: dynamically add images to carousel -->
       <div class="carousel">
           <div class="carousel-container">
 
@@ -47,7 +51,7 @@
 
           </div>
             <br>
-
+            <!-- carousel indicators -->
             <div style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
@@ -56,15 +60,19 @@
               <span class="dot" onclick="currentSlide(5)"></span>
             </div>
      </div>
+     <!-- row/column for responsiveness -->
       <div class="row">
+        <!-- column for dynamically added content -->
         <div id="info-left" class="column">
         </div>
-
+        <!-- column for product details -->
         <div id="info-right" class="column right">
             <h5 id="price">$35.00</h5>
+            <!-- color details row -->
             <div class="info-row">
               <div class="info-col">color</div>
-
+              <!-- color choice radio button user input -->
+              <!-- TODO: dynamically add color choices -->
               <div  class="info-col black">
                 <label class="color-container ">black
                   <input type="radio" checked="checked" name="radio">
@@ -80,15 +88,17 @@
                 </label>
               </div>
             </div>
+            <!-- quantity details row -->
             <div class="info-row">
               <button class="info-col info-button" onclick="subtractQuantity()">-</button>
               <label class="info-col">quantity &nbsp<input data-min="1" type="number" id="quantity" class="quantity" value="1"></input></label>
               <button class="info-col info-button right-button" onclick="addQuantity()">+</button>
             </div>
-
+            <!-- size details row -->
             <div id="dropdown" class="info-row" onclick="sizeDropDown()">
               <h6 class="info-col">size</h6>
               <div id="size" class=" info-col info-button right-button" ></div>
+              <!-- TODO: dynamically add sizes to list -->
               <div id="size-container" class="size-container">
                 <a class="size-item">xs</a></br>
                 <a class="size-item">s</a></br>
@@ -99,18 +109,20 @@
             </div>
 
             <button class="option-button">what's my size?</button>
-            <div class="info-row button-container">
-              <button class="info-col add-button">add to cart</button>
-            </div>
+            <button class="info-col add-button">add to cart</button>
             <button class="option-button set">build a cycle set and save up to 20%</button>
 
         </div>
      </div>
+     <!-- image container for dynamically added images -->
      <div id="imgs" class="product-imgs">
      </div>
    </div>
   </section>
+  <!-- "more products" section -->
+  <!-- TODO:  dynamically add more products from javascript object-->
   <section id="products" class="more-products">
+    <!-- row/column for responsiveness -->
     <div class="product-row">
         <div class=product-col>
           <div class="product-container">

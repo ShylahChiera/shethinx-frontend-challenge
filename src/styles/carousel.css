@@ -23,6 +23,7 @@
 .active, .dot:hover {
   background-color: #717171;
 }
+/* responsiveness for mobile and tablet */
 @media only screen and (max-width: 900px) {
  .carousel{
    display: inline;

@@ -1,5 +1,5 @@
 "use strict";
-
+//create products object to simulate JSON Object or API call
 var products = [
     {
       type: "high-waist",

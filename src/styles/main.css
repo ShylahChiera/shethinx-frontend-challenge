@@ -16,13 +16,11 @@ p {
   line-height: 22px;
   margin-top: 20px;
 }
-/* .product {
-  background-color: #F8F8F9;
-  overflow: scroll;
-  height: 100vh;
-  display: inline-block;
+* {
+    box-sizing: border-box;
+}
 
-} */
+/* product container template */
 
 .product{
   width: 100%;
@@ -32,34 +30,15 @@ p {
   display: inline-block;
   padding-bottom: 50px;
 }
-
-* {
-    box-sizing: border-box;
-}
-
-.size-item {
-  padding: 10px;
-  display: inline-block;
-  width: inherit;
-}
-.size-item:hover {
-  background-color: white;
-}
-
 .row {
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-/* .product-carousel {
-  display:none;
-} */
 .column {
   float: left;
   width: 25%;
@@ -67,11 +46,9 @@ p {
   margin-top: 260px;
 
 }
-
 .right {
   right: 5%;
 }
-
 .info-col {
   float: left;
   width: 33.33%;
@@ -81,6 +58,21 @@ p {
   background-color: transparent;
   display: inline-block;
 }
+
+/* hide default number input */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: none;
+}
+
+/* custom number input */
 
 .info-col input {
   font-family: Graphik;
@@ -94,17 +86,8 @@ p {
   padding:0;
 }
 
+/* create rows for product info - right */
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type=number]
-{
-  -moz-appearance: none;
-}
 .info-row {
   content:"";
   display: table;
@@ -114,22 +97,6 @@ input[type=number]
   margin-top: 20px;
 
 }
-
-.right-button{
-  float: right;
-}
-h6{
-  margin: 0;
-  font-weight: normal;
-}
-.option-button {
-  font-size: 10px;
-  text-decoration: underline;
-  background-color: transparent;
-  border: 0;
-  margin-top: 10px;
-  padding:0;
-}
 .info-button {
   width: 32px;
   background-color: transparent;
@@ -137,6 +104,16 @@ h6{
   font-size: 12px;
   font-weight: bold;
 }
+
+.right-button{
+  float: right;
+}
+
+h6{
+  margin: 0;
+  font-weight: normal;
+}
+
 #size {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -147,39 +124,6 @@ h6{
   width: 10px;
   height: 10px;
   margin:10px;
-}
-.button-container {
-  margin-top: 40px;
-}
-.add-button {
-  background-color: black;
-  width: 100%;
-  border: 0;
-  color: white;
-  height: 36px;
-}
-
-.set {
-  font-size: 16px;
-}
-
-.product-imgs {
-  width: 35%;
-  margin-left: 32%;
-  margin-right: 32%;
-  margin-top: 100px;
-  cursor: zoom-in;
-  position:relative;
-}
-
-.img {
-    width:100%;
-    position: relative;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .size-container {
@@ -192,7 +136,58 @@ h6{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow: auto;
 }
+
+.size-item {
+  padding: 10px;
+  display: inline-block;
+  width: inherit;
+}
+.size-item:hover {
+  background-color: white;
+}
+
+/* show size dropdown */
+
 .show {display: block;}
+
+.option-button {
+  font-size: 10px;
+  text-decoration: underline;
+  background-color: transparent;
+  border: 0;
+  margin-top: 10px;
+  padding:0;
+}
+
+.add-button {
+  background-color: black;
+  width: 100%;
+  border: 0;
+  color: white;
+  height: 36px;
+  margin-top: 40px;
+}
+
+/* product image position and resize */
+
+.product-imgs {
+  width: 35%;
+  margin-left: 32%;
+  margin-right: 32%;
+  margin-top: 100px;
+  cursor: zoom-in;
+  position:relative;
+}
+
+/* product img classname from load images */
+
+.img {
+    width:100%;
+    position: relative;
+}
+
+
+/* "more products" section */
 
 .more-products {
   width: 100%;
@@ -224,12 +219,16 @@ h6{
 .product-row a {
   text-decoration: underline;
 }
+
+/* wrap content and align left */
+
 .product-container{
   display: inline-block;
   padding: 20px;
   text-align: left;
 }
 
+/* 3rd element width 100% */
 .middle {
   width: 100%
 }
